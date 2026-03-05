@@ -8,7 +8,6 @@ A lightweight, **permissioned P2P file‑sharing app** in Python. A small centra
 - **Protocols**: UDP for control (client⇄server), TCP for data (peer⇄peer).
 - **Concurrency**: a multithreaded client keeps the shell responsive while sending heartbeats and serving incoming downloads.
 
-
 ## Code Layout & Dependencies
 ```
 .
@@ -76,6 +75,7 @@ python3 client.py <server_port>
 - Log in using an entry from `server/credentials.txt`.
 - Start multiple clients in separate terminals to see peer‑to‑peer transfers.
 
+![Terminal](img.png)
 
 ## Known Limitations (and Possible Extensions)
 - **Concurrency bound**: inbound transfers handled by a **5‑worker** pool.
